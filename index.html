@@ -5,92 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>PhotoLib</title>
-        <link rel="stylesheet" href="style1.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="style1.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <ul class="ul_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <button class="log">Login</button>
+                <button class="log">Signup</button>
+                
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu_btn">
+        </nav>
         <header>
-            <div class="nav1">
-            <nav>
-                <ul>                    
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Search</a></li>
-                </ul>
-            </nav>
-            </div>
-            <div class="hc">
-            <div class="hm">
-            <h1 class="logo">PhotoLib</h1>
-            <p class="subline">Serch your image with us</p>    
-            <form action="search.html">
-                <input type="text" name="search" class="searchbox" placeholder="search image">
-                <button class="btn1" type="submit">Search</button>
-            </form>
-            </div>
-            </div>
+            <div class="header_content">
+                <h1>PhotoLib</h1>
+                <div class="line"></div>
+                <h2>Explore the Colorful World</h2>
+
+                <form action="search.html">
+                    <input type="text" name="search" class="search_box" placeholder="Search images">
+                    <button class="search_btn">Search</button>
+                </form>
+                </div>
+                
         </header>
 
-        <div class="images">
-            <div class="gal">
-                <img src="img/img (1).png" alt="" />
-            </div>
-      
-            <div class="gal">
-                <img src="img/img (2).png" alt="phto" />
-            </div>
-              
-            <div class="gal">
-                <img src="img/img (3).png" alt="" />
-            </div>
-            <div class="gal">
-                <img src="img/img (4).png" alt="" />
-            </div>
-      
-            <div class="gal">
-                <img src="img/img (1).png" alt="" />
-            </div>
-              
-            <div class="gal">
-                <img src="img/img (6).png" alt="\" />
-            </div>
-            <div class="gal">
-                <img src="img/img (7).png" alt="\" />
-            </div>
-            <div class="gal">
-                <img src="img/img (8).png" alt="\" />
-            </div>
-            <div class="gal">
-                <img src="img/img (1).png" alt="" />
-            </div>
-      
-            <div class="gal">
-                <img src="img/img (2).png" alt="phto" />
-            </div>
-              
-            <div class="gal">
-                <img src="img/img (3).png" alt="" />
-            </div>
-            <div class="gal">
-                <img src="img/img (4).png" alt="" />
-            </div>
-      
-            <div class="gal">
-                <img src="img/img (7).png" alt="" />
-            </div>
-              
-            <div class="gal">
-                <img src="img/img (6).png" alt="\" />
-            </div>
-            <div class="gal">
-                <img src="img/img (7).png" alt="\" />
-            </div>
-            <div class="gal">
-                <img src="img/img (8).png" alt="\" />
-            </div>
-        </div>
+        <!--Images-->
+        <section class="row">
+           <img src="./img/p1.png" alt="" class="col">
+           <img src="./img/p2.png" alt="" class="col">
+           <img src="./img/p3.png" alt="" class="col">
+           <img src="./img/p4.png" alt="" class="col">
+           <img src="./img/p5.png" alt="" class="col">
+           <img src="./img/p6.png" alt="" class="col">
+           <img src="./img/p7.png" alt="" class="col">
+           <img src="./img/p8.png" alt="" class="col">
+           <img src="./img/p1.png" alt="" class="col">
+           <img src="./img/p1.png" alt="" class="col">
+           <img src="./img/p2.png" alt="" class="col">
+           <img src="./img/p3.png" alt="" class="col">
+           <img src="./img/p4.png" alt="" class="col">
+           <img src="./img/p7.png" alt="" class="col">
+           <img src="./img/p8.png" alt="" class="col">
+           
+        </section>
+
+        <script>
+            const menuBtn = document.querySelector('.menu_btn')
+            const navlinks = document.querySelector('.ul_list')
+
+            menuBtn.addEventListener("click",()=>{
+                navlinks.classList.toggle('mobile_menu')
+            })
+        </script>
     </body>
 </html>
